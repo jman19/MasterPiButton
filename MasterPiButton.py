@@ -36,9 +36,9 @@ def resetPressed(channel):
     except:
     	print('failed to update index')
     
-GPIO.add_event_detect(PrevButtonPin,GPIO.FALLING,callback=prevPressed,bouncetime=200)
-GPIO.add_event_detect(ResetButtonPin,GPIO.FALLING,callback=resetPressed,bouncetime=200)
-GPIO.add_event_detect(NextButtonPin,GPIO.FALLING,callback=nextPressed,bouncetime=200)
+GPIO.add_event_detect(PrevButtonPin,GPIO.FALLING,callback=prevPressed,bouncetime=400)
+GPIO.add_event_detect(ResetButtonPin,GPIO.FALLING,callback=resetPressed,bouncetime=400)
+GPIO.add_event_detect(NextButtonPin,GPIO.FALLING,callback=nextPressed,bouncetime=400)
 
 message=input("Press any key then press enter to exit program\n")
 
